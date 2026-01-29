@@ -27,7 +27,17 @@ app.get("/", authenticate, (req: Request, res: Response) => {
   res.send("You have accessed a protected route!!");
 });
 
-app.post("/", (req: Request, res: Response) => {
+app.get("/data", (req: Request, res: Response) => {
+  res.send("Recieved a GET request");
+})
+app.post("/data", (req: Request, res: Response) => {
+  res.send("Recieved a POST request");
+})
+app.delete("/data", (req: Request, res: Response) => {
+  res.send("Recieved a DELETE request")
+})
+
+app.post("/hello", (req: Request, res: Response) => {
   res.send("Hello from express and typescript app!!");
 });
 
