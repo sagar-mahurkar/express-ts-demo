@@ -8,6 +8,7 @@ Go to GitHub and create new repo
 git init
 git remote -v
 git remote add origin [repo-url]
+git remote -v
 ```
 
 ```bash
@@ -16,6 +17,15 @@ touch .gitignore
 
 ```.gitignore
 /node_modules
+```
+
+```bash
+git branch -M main
+git branch
+git pull origin main
+git add .
+git commit -m "Initial commit"
+git push -u origin main
 ```
 
 ## Project setup
